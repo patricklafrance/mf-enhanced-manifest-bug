@@ -1,0 +1,18 @@
+{
+  "name": "mf-enhanced-manifest-bug",
+  "version": "1.0.0",
+  "description": "Showcase that mf enhanced configured to use manifest files throws an error when a remote if offline.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev-with-all-remotes": "pnpm -r --parallel dev",
+    "dev-only-host": "cd packages/host && pnpm dev",
+    "reset": "pnpm run \"/^reset:.*/\"",
+    "reset:node-modules": "pnpm -r --include-workspace-root --parallel exec pnpm dlx rimraf node_modules",
+    "reset:lock-file": "pnpm dlx rimraf pnpm-lock.yaml",
+    "list-outdated-deps": "pnpm outdated -r --format list !eslint",
+    "update-outdated-deps": "pnpm update -r --latest !eslint"
+  },
+  "keywords": [],
+  "license": "ISC"
+}
