@@ -1,5 +1,7 @@
 # mf-enhanced-manifest-bug
 
+This repo is related to the following issue: https://github.com/module-federation/universe/issues/2362.
+
 The monorepo contains 3 applications:
 - An [host application](./packages/host/)
 - A remote module named [remote-1](./packages/remote-1/)
